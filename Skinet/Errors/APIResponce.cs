@@ -10,6 +10,7 @@ namespace Skinet.Errors
         public APIResponce(int StatusCode, string  message = null)
         {
             statusCode = StatusCode;
+
             Message = message ?? DefaultStatusCodeMessage(StatusCode);
         }
         private string DefaultStatusCodeMessage(int StatusCode)

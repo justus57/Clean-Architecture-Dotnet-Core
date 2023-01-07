@@ -16,6 +16,7 @@ namespace Skinet.ExceptionMiddleWare
         private readonly IHostEnvironment _hostEnvironment;
 
         public ExceptionMiddle(
+
             RequestDelegate next, 
             ILogger<ExceptionMiddle> logger,
             IHostEnvironment hostEnvironment)
